@@ -156,15 +156,9 @@
   }
 
   body {
-    text-align: center;
     font-size: var(--font-size-regular);
     color: var(--text-main);
     background-color: var(--background-main);
-
-    background-image: url("assets/botanical-expertise.webp"); /* Adjust the path if needed */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   h1,
@@ -184,5 +178,17 @@
   a:hover,
   a:focus {
     color: var(--text-brand-light);
+  }
+}
+
+@layer utilities {
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
 }
